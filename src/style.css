@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,500");
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+}
+
+.one-player,
+.two-player {
+  background-color: #f7f7f7;
+}
+
+.one-player,
+.two-player,
+.pick-x,
+.pick-o,
+.start-new-btn,
+.restart-btn {
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid;
+  font-weight: bold;
+}
+
+.pick-avator-wrap,
+.game-view {
+  display: none;
+}
+
+.pick-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pick-x,
+.pick-o {
+  font-size: 2rem;
+  width: 4rem;
+}
+
+.player-turn,
+.score-board,
+.one-player,
+.two-player {
+  margin: 10px;
+}
+
+.board-row {
+  display: flex;
+}
+
+.square:focus {
+  outline: 0;
+}
+
+button.square {
+  width: 6rem;
+  height: 6rem;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid #000;
+  font-size: 4rem;
+  cursor: pointer;
+}
+
+.notify-winner {
+  position: absolute;
+  display: none;
+  overflow: auto;
+  margin: auto;
+  top: 40%;
+  left: 0;
+  right: 0;
+  color: #fff;
+}
